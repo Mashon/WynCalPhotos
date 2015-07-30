@@ -10,10 +10,9 @@ class EventsController < ApplicationController
     offset = ( @page - 1 ) * 10
     total_count = Event.count
     @events = Event.
-      order(start_date: :desc).
+      order(start_date: :asc).
       limit(window).
-      offset(offset).
-      all
+      offset(offset)
     @display_next = offset + window < total_count
   end
 
