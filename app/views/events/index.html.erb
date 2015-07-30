@@ -44,6 +44,7 @@
       <% @events.each do |event| %>
         <p><%= event.name %>
         <%= event.description %>
+        <%= event.start_date %>
         <%= link_to 'Show', event %></p>
           <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
           <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
