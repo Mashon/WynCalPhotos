@@ -34,12 +34,13 @@ body {
     text-align: left;
     padding-left: 2.75cm;
     padding-top: -1.5em;
+    float: left;
+    margin-right: 3.5em;
 }
 
     /* modify the header bar; gradient colors, padding, height/width  */
 
 .header {
-  position: static;
   height: 13.5em;
   width: 100%;
   padding-top: 1em;
@@ -52,15 +53,33 @@ body {
 }
 
 
-    /* modify the header images next to WynCal header   */
+    /* modify the header icons next to WynCal header   */
 
 .header img {
   height: 9em;
   opacity: 1;
-  float: right;
-  margin-top: -16.5em;
-  padding-right: 3em;
+  /*float: right;*/
+  margin-top: 4em;
 }
+
+    /* modify the header icon links   */
+
+    .header a:link {
+      text-decoration: none;
+    }
+
+    .header a:visited {
+      text-decoration: none;
+    }
+
+    .header a:hover {
+      background-color: inherit;
+      opacity: 1;
+      filter: alpha(opacity=0);
+    }
+    .header a:active {
+      text-decoration: none;
+    }
 
     /* modify "List of This Week's Events"   */
 
@@ -69,7 +88,7 @@ body {
   font-family: 'Oxygen', sans-serif;
   font-size: 2.5em;
   margin: auto;
-  /*background-color: rgba(69, 69, 72, 0.8);*/
+  /* background-color: rgba(69, 69, 72, 0.8); */
   width: auto;
   border-radius: 4.5em;
 }
@@ -88,22 +107,14 @@ body {
 
   .events {
     color: black;
-    font-size: 1.95em;
     font-family: 'Lato', sans-serif;
+    font-size: 1.95em;
     line-height: 2em;
     text-align: center;
-    word-spacing: 2.5em;
     background-color: rgba(0, 0, 14, 0.3);
     border-radius: 14em 20em;
-    padding: 2em;
-    /*word-spacing: 2.5em;*/
-    background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
-    background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
-    background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
-    background: linear-gradient(to left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Standard*/
-    border-radius: 15em 14.5em;
+    padding: 2em
   }
-
 
 
     /* Modify the contents of the table
@@ -120,6 +131,8 @@ body {
   padding: 0.5em;
   word-spacing: 1.5em;
 }*/
+
+
 
 .newevent {
   font-family: 'Merriweather Sans', sans-serif;
