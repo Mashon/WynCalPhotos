@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="header">
+  <p>WynCal</p>
+  <br><%= image_tag "list_icon.png" %>
+  <!-- <%= image_tag "search_function.png" %>
+  <%= image_tag "" %>  -->
+</div><br><br>
+
+<div class="thisweek">
+<center><h3>List of this Week's Events</h3></div></center>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Date/Time</th>
+      <th>Location</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+</table>
+
+<br><br><br><br>
+<div class="upcoming">
+<center><h3>List of Upcoming Events</h3></div></center>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Date/Time</th>
+      <th>Location</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+</table>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.name %></td>
+        <td><%= event.description %></td>
+        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+<br>
+
+
+<!-- <div class="newevent">
+<%= link_to 'Add a New Event', new_event_path %>
+</div> -->

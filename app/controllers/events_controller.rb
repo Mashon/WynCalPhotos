@@ -4,12 +4,13 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
+
     @page = ( params[:page] || 1 ).to_i
     window = 10
     offset = ( @page - 1 ) * 10
     total_count = Event.count
     @events = Event.
-      order(created_at: :desc).
+      order(start_date: :desc).
       limit(window).
       offset(offset).
       all
