@@ -27,7 +27,7 @@
 <div class="upcoming">
 <center><h3>List of Upcoming Events</h3></div></center>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -37,7 +37,7 @@
       <th colspan="4"></th>
     </tr>
   </thead>
-</table>
+</table> -->
 
 
     <div class="events">
@@ -50,7 +50,6 @@
       <% end %>
     </div>
 
-
 <br>
 
 
@@ -58,7 +57,7 @@
   <%= link_to "Previous page", page: @page - 1 %>
 <% end %>
 
-<% if (@page + 1) < ( (Event.count / 25) + 1 ) %>
+<% if @display_next %>
   <%= link_to "Next page", page: @page + 1 %>
 <% end %>
 
