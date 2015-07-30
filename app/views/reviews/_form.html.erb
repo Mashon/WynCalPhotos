@@ -22,9 +22,9 @@
     <%= f.text_field :event_id %>
   </div>
   <% else %>
-  <%= f.label :event_id %><br>
-  <!-- <%= f.text_field -->
-  
+  <%= f.hidden_field :event_id, value: @event.id %>
+  <% end %>
+
 
 
   <div class="actions">
