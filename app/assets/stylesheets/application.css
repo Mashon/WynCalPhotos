@@ -13,3 +13,95 @@
  *= require_tree .
  *= require_self
  */
+
+  /* the background image is fixed so it doesn't scroll
+  with the contents of the page. it is also on repeat because it is
+  a tile.  */
+
+body {
+   background-image: url(paper_bg.png);
+   background-attachment: fixed;
+   background-repeat: repeat;
+ }
+
+  /* modify the text header "WynCal" on the menu bar  */
+
+.header p {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 8em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 2.75cm;
+    padding-top: -1.5em;
+}
+
+    /* modify the header bar; gradient colors, padding, height/width  */
+
+.header {
+  position: static;
+  height: 13.5em;
+  width: 100%;
+  padding-top: 1.15em;
+  padding-bottom: 1.55em;
+  background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
+  background: linear-gradient(to left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Standard*/
+  border-radius: 3.5em 4.5em;
+}
+
+
+    /* modify the header images next to WynCal header   */
+
+.header img {
+  height: 9em;
+  opacity: 1;
+  float: right;
+  margin-top: -16.5em;
+  padding-right: 3em;
+}
+
+    /* modify "List of This Week's Events"   */
+
+.thisweek {
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2.5em;
+  margin: auto;
+  /*background-color: rgba(69, 69, 72, 0.8);*/
+  width: auto;
+  border-radius: 4.5em;
+}
+
+  /* modify the "List of Upcoming Events"   */
+
+  .upcoming {
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2.5em;
+  margin: auto;
+  /*background-color: rgba(69, 69, 72, 0.8);*/
+  width:auto;
+  border-radius: 4.5em;
+  }
+
+    /* Modify the contents of the table
+    including the text and table modifications  */
+
+table {
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  background-color: rgba(69, 69, 72, 0.8);
+  border: 3.5em;
+  width: 50em;
+  padding: 0.5em;
+  word-spacing: 1.5em;
+}
+
+tbody {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3em;
+}
