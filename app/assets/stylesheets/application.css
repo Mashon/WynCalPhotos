@@ -92,7 +92,7 @@ body {
     font-family: 'Lato', sans-serif;
     /*line-height: 1.5em;*/
     text-align: center;
-    word-spacing: 2.5em;
+    /*word-spacing: 2.5em;*/
     background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
     background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
     background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
