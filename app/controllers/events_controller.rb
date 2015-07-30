@@ -4,7 +4,13 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    @page = ( params[:page] || 1 ).to_i
+    offset = ( @page - 1 ) * 25
+    @events = Event.
+      order(created_at: :desc).
+      limit(25).
+      offset(offset).
+      all
   end
 
   # GET /events/1
