@@ -44,6 +44,7 @@
       <% @events.each do |event| %>
         <p><%= event.name %>
         <%= event.description %>
+        <%= event.start_date %>
         <%= link_to 'Show', event %></p>
           <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
           <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
@@ -61,14 +62,8 @@
   <%= link_to "Next page", page: @page + 1 %>
 <% end %>
 
-<<<<<<< HEAD
 <br><br><br>
 
 <div class="newevent">
 <%= link_to 'Add a New Event', new_event_path %>
 </div>
-=======
-<!-- <div class="newevent"> -->
-<%= link_to 'Add a New Event', new_event_path %>
-<!-- </div> -->
->>>>>>> b948171ab1a440b3b2babe2d79d53f9db69ead23
