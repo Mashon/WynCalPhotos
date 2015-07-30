@@ -88,10 +88,14 @@ body {
 
   .events {
     color: black;
-    font-size: 1.5em;
+    font-size: 1.95em;
     font-family: 'Lato', sans-serif;
-    /*line-height: 1.5em;*/
+    line-height: 2em;
     text-align: center;
+    word-spacing: 2.5em;
+    background-color: rgba(0, 0, 14, 0.3);
+    border-radius: 14em 20em;
+    padding: 2em;
     /*word-spacing: 2.5em;*/
     background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
     background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
@@ -99,6 +103,7 @@ body {
     background: linear-gradient(to left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Standard*/
     border-radius: 15em 14.5em;
   }
+
 
 
     /* Modify the contents of the table
@@ -115,3 +120,32 @@ body {
   padding: 0.5em;
   word-spacing: 1.5em;
 }*/
+
+.newevent {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2em;
+}
+
+.newevent a:link {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newevent a:visited {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+.newevent a:hover {
+  background-color: inherit;
+  color: #5CB8E6;
+  font-weight: bold;
+  opacity: 1;
+  filter: alpha(opacity=0);
+}
+.newevent a:active {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
