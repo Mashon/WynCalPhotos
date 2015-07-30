@@ -96,9 +96,15 @@ body {
     background-color: rgba(0, 0, 14, 0.3);
     border-radius: 14em 20em;
     padding: 2em;
+    /*word-spacing: 2.5em;*/
+    background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
+    background: linear-gradient(to left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Standard*/
+    border-radius: 15em 14.5em;
   }
 
-  
+
 
     /* Modify the contents of the table
     including the text and table modifications  */

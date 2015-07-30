@@ -5,8 +5,8 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @page = ( params[:page] || 1 ).to_i
-    window = 25
-    offset = ( @page - 1 ) * 25
+    window = 10
+    offset = ( @page - 1 ) * 10
     total_count = Event.count
     @events = Event.
       order(created_at: :desc).
@@ -79,6 +79,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:name, :description)
+      params.require(:event).permit(:name, :description, :start_date)
     end
 end
