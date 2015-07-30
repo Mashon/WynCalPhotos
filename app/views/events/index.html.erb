@@ -33,6 +33,6 @@
   <%= link_to "Previous page", page: @page - 1 %>
 <% end %>
 
-<% if (@page + 1) < ( (Event.count / 25) + 1 ) %>
+<% if @display_next %>
   <%= link_to "Next page", page: @page + 1 %>
 <% end %>
