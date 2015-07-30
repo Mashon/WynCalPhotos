@@ -19,7 +19,7 @@
   a tile.  */
 
 body {
-   background-image: url(paper_bg.png);
+   background-image: url('paper_bg.png');
    background-attachment: fixed;
    background-repeat: repeat;
  }
@@ -42,8 +42,8 @@ body {
   position: static;
   height: 13.5em;
   width: 100%;
-  padding-top: 1.15em;
-  padding-bottom: 1.55em;
+  padding-top: 1em;
+  padding-bottom: 1.85em;
   background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
   background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
   background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
@@ -86,10 +86,25 @@ body {
   border-radius: 4.5em;
   }
 
+  .events {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    /*line-height: 1.5em;*/
+    text-align: center;
+    word-spacing: 2.5em;
+    background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
+    background: linear-gradient(to left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Standard*/
+    border-radius: 15em 14.5em;
+  }
+
+
     /* Modify the contents of the table
     including the text and table modifications  */
 
-table {
+/*table {
   color: white;
   font-family: 'Oxygen', sans-serif;
   font-size: 1.5em;
@@ -99,9 +114,4 @@ table {
   width: 50em;
   padding: 0.5em;
   word-spacing: 1.5em;
-}
-
-tbody {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 3em;
-}
+}*/
