@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150730122134) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
     t.integer  "event_id"
@@ -20,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150730122134) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["event_id"], name: "index_comments_on_event_id"
+  add_index "comments", ["event_id"], name: "index_comments_on_event_id", using: :btree
 
   create_table "events", force: :cascade do |t|
     t.string   "name"
@@ -36,6 +39,6 @@ ActiveRecord::Schema.define(version: 20150730122134) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "reviews", ["event_id"], name: "index_reviews_on_event_id"
+  add_index "reviews", ["event_id"], name: "index_reviews_on_event_id", using: :btree
 
 end
