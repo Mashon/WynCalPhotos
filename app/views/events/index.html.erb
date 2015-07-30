@@ -27,7 +27,7 @@
 <div class="upcoming">
 <center><h3>List of Upcoming Events</h3></div></center>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -37,19 +37,17 @@
       <th colspan="4"></th>
     </tr>
   </thead>
-</table>
+</table> -->
 
-  <tbody>
     <% @events.each do |event| %>
-      <tr>
-        <td><%= event.name %></td>
-        <td><%= event.description %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div>
+        <%= event.name %>
+        <%= event.description %>
+        <%= link_to 'Show', event %>
+        <%= link_to 'Edit', edit_event_path(event) %>
+        <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
     <% end %>
-  </tbody>
 
 <br>
 
