@@ -3,7 +3,7 @@
 <br><br>
 <div class="header">
   <p>WynCal</p>
-  <br><%#= link_to (image_tag "list_icon.png"), about_path %>
+  <%#= link_to (image_tag "list_icon.png"), about_path %>
   <%= link_to (image_tag "info_icon.png"), about_path %>
   <!-- <%= image_tag "search_function.png" %> -->
 </div><br><br>
@@ -24,15 +24,12 @@
   </thead>
 </table> -->
 
-
-  <div class="events">
     <% @events.each do |event| %>
-      <p><%= event.name %>
+    <div class="events">
+      <%= event.name %>
       <!-- <%= event.description %> -->
       <%= event.start_date %>
-      <%= link_to 'Show', event %></p>
-        <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
-        <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      <%= link_to 'Show', event %>
     <% end %>
   </div>
 <br>
