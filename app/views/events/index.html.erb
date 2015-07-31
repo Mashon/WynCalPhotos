@@ -14,8 +14,8 @@
 
   <div class="events">
     <% @events.each do |event| %>
-      <p><%= event.name %>
-      <%= event.start_date.strftime("%A, %b %d") %>
+      <p><%= event.start_date.strftime("%A, %b %d") %> |
+      <%= event.name %> | 
       <%= link_to 'Show', event %></p>
     <% end %>
   </div>
