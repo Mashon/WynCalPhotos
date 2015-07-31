@@ -180,25 +180,30 @@ body {
     text-align: center;
   }
 
-  /* modify the Events icon link */
+  /* modify the appearance of the Events icon link */
+
+  .events .fa-align-left {
+    color: white;
+    font-size: 1.2em;
+    filter: alpha(opacity=0);
+  }
 
   .events .fa-align-left:link {
     text-decoration: none;
-    font-weight: bold;
   }
   .events .fa-align-left:visited {
     text-decoration: none;
-    font-weight: bold;
   }
   .events .fa-align-left:hover {
-    /*opacity: 0.75;*/
-    font-weight: bold;
+    color: inherit;
     background-color: inherit;
   }
   .events .fa-align-left:active {
     text-decoration: none;
-    font-weight: bold;
   }
+
+  /* to modify the "Create a New Event" link
+  at the bottom of the page   */
 
   .newevent {
     font-family: 'Merriweather Sans', sans-serif;
