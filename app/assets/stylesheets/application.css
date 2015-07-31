@@ -62,11 +62,29 @@ body {
 
     /* modify the header icons next to WynCal header   */
 
-.header img {
-  height: 9em;
-  opacity: 1;
-  margin-top: 4em;
-}
+    .header .fa-at {
+      margin-top: .4em;
+      color: white;
+      font-size: 7.5em;
+      width: 1em;
+      opacity: 1;
+      filter: alpha(opacity=0);
+      padding-right: 3em;
+    }
+
+    .header .fa-at:link {
+      text-decoration: none;
+    }
+    .header .fa-at:visited {
+      text-decoration: none;
+    }
+    .header .fa-at:hover {
+      opacity: .7;
+    }
+    .header .fa-at:active {
+      text-decoration: none;
+    }
+
 
     /* modify the header icon links   */
 

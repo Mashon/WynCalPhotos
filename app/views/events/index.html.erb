@@ -3,36 +3,20 @@
 <br><br>
 <div class="header">
   <p>WynCal</p>
-  <br><%#= link_to (image_tag "list_icon.png"), about_path %>
-  <%= link_to (image_tag "info_icon.png"), about_path %>
-  <!-- <%= image_tag "search_function.png" %> -->
+  <br>
+  <%= link_to "<i class='fa fa-at'></i>".html_safe, about_path %>
 </div><br><br>
 
 
 <div class="upcoming">
 <center><h3>List of Upcoming Events</h3></div></center>
 
-<!-- <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Date/Time</th>
-      <th>Location</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-</table> -->
-
 
   <div class="events">
     <% @events.each do |event| %>
       <p><%= event.name %>
-      <!-- <%= event.description %> -->
       <%= event.start_date.strftime("%A, %b %d") %>
       <%= link_to 'Show', event %></p>
-        <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
-        <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
     <% end %>
   </div>
 <br>
