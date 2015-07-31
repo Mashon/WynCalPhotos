@@ -19,7 +19,7 @@
   a tile.  */
 
  body {
-   background-image: url('abstract-background.jpg');
+   background-image: url('/images/abstract-background.jpg');
    background-attachment: fixed;
    background-size: cover;
  }
