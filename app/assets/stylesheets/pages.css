@@ -26,14 +26,14 @@ body  {
       overflow: hidden;
     }
 
-      h2 {
+      .bros {
         text-align: center;
         font-size: 2em;
         color: rgba(34,145,112,1);
         text-shadow: 2px 2px 1px white;
       }
 
-      h1 {
+      .fosho {
         position: absolute;
         bottom: -70px;
         left: 0 ;
@@ -51,7 +51,7 @@ body  {
         -webkit-font-smoothing: antialiased;
         }
 
-      p {
+      .yolo {
         position: absolute;
         bottom: 20%;
         margin: 0 10%;
@@ -60,7 +60,7 @@ body  {
         transition: all .3s;
         }
 
-      p:hover {
+      .yolo:hover {
           bottom: 40%;
           color: rgba(0,0,0,1);
           background-color: rgba(255,255,255, .4);
@@ -68,7 +68,7 @@ body  {
           transition: all .3s;
           }
 
-        h1:hover {
+        .fosho:hover {
           bottom: 0;
           transition: all .4s;
           }
