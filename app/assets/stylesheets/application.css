@@ -149,3 +149,24 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
+
+.team {
+display: block;
+height: 20em;
+width: auto;
+border: solid black;
+}
+
+.portaits {
+height: 80%;
+width: 80%;
+border: solid black;
+}
+
+.us {
+  width: 30%;
+  height: 30%;
+  margin-top: .2em;
+  margin-left: .2em;
+  border-radius: 12.5em;
+}
