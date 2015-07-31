@@ -179,3 +179,7 @@ border: solid black;
   margin-left: .2em;
   border-radius: 12.5em;
 }
+
+.center {
+  text-align: center;
+}

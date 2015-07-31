@@ -128,3 +128,9 @@ Event.create( name: "Makers Square - Open House", description: "7:00 PM to 9:00 
 
 Open House for Makers Square. Stop by, check out the space, meet some members, and talk about all the crazy things you want to make.", start_date: "2015-08-26" )
 Event.create( name: "Open Hack Miami - Miami Ruby Brigade", description: "The LAB Miami, 400 Northwest 26th Street, Miami, FL 33127, United States", start_date: "2015-08-31" )
+
+Review.create( comment: "It's going to be a lot of fun! -Chris", event_id: 1 )
+Review.create( comment: "Anyone else going? -Karl", event_id: 1 )
+Review.create( comment: "I'd love to go. Who's car pooling with me? -Doug", event_id: 1 )
+Review.create( comment: "I will! -Karl", event_id: 1 )
+Review.create( comment: "Me too, Doug. -Chris", event_id: 1 )

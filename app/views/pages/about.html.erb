@@ -1,11 +1,46 @@
 
+<body>
 
-<div class="team">
+  <p id="notice"><%= notice %></p>
 
-  <div class="portraits">
-    <span class="us"><%= image_tag 'chris.jpeg' %></span>
-    <span class="us"><%= image_tag 'joann.jpeg' %></span>
-    <span class="us"><%= image_tag 'jeff.jpeg' %></span>
-  </div>
+  <br><br>
+  <div class="header">
+    <p class="About_team">About the WynCal Team</p>
+    <br>
+    <%= link_to (image_tag "home_icon.png"), events_path %>
+  </div><br><br>
 
-</div>
+  <figure>
+    <!-- CHANGE IMAGE URL HERE IF YOU WANT A BACKGROUND IMAGE-->
+    <figcaption style="background-image: url('//avatars1.githubusercontent.com/u/13121620?v=3&s=400')">
+      <h2 class="bros">LEAD LOGIC DEVELOPER</h2>
+      <h1 class="fosho">Christopher Booty</h1>
+      <p class="yolo">
+      Christopher is a veteran coder with over 30 days experience. Born with incredible critical thinking skills and a keen eye for problem solving he was a sure choice to be the lead Senior Developer for WynCal.
+      </p>
+    </figcaption>
+  </figure>
+
+   <figure>
+    <!-- CHANGE IMAGE URL HERE IF YOU WANT A BACKGROUND IMAGE-->
+    <figcaption style="background-image: url('//avatars3.githubusercontent.com/u/12835141?v=3&s=400')">
+      <h2 class="bros">LEAD DESIGN DEVELOPER</h2>
+      <h1 class="fosho">Joann Kim</h1>
+      <p class="yolo">
+      Joann is a World-Renowned Designer hailing from South Florida. Ms. Kim is known for constantly striving for perfection and her distinguished color palette.
+      </p>
+    </figcaption>
+  </figure>
+
+   <figure>
+    <!-- CHANGE IMAGE URL HERE IF YOU WANT A BACKGROUND IMAGE-->
+    <figcaption style="background-image: url('//avatars3.githubusercontent.com/u/13087850?v=3&s=400')">
+      <h2 class="bros">THE DUDE</h2>
+      <h1 class="fosho">Jeff Ginsberg</h1>
+      <p class="yolo">
+        Wyncode Team's require 3 people so we got this guy. He completes the Ultimate Trio!
+      </p>
+    </figcaption>
+  </figure>
+
+</body>

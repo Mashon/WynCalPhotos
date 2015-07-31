@@ -1,27 +1,41 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+<br><br>
+<div class="header">
+  <p>WynCal</p>
+  <br><%#= link_to (image_tag "list_icon.png"), about_path %>
+  <%= link_to (image_tag "info_icon.png"), about_path %>
+  <!-- <%= image_tag "search_function.png" %> -->
+</div><br><br>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+<div class="events">
+  <p>
+    <strong>Name:</strong>
+    <%= @event.name %>
+  </p>
 
-<h3>Comments</h3>
-<% @event.reviews.each do |review| %>
-<p>
-  <%= review.comment %>
-  <br>
-  Added on: <%= review.created_at %>
-</p>
-<% end %>
+  <p>
+    <strong>Date:</strong>
+    <%= @event.start_date.strftime("%A, %b %d") %>
+  </p>
 
-<h3>New Comment</h3>
-<%= render 'reviews/form' %>
+  <p>
+    <strong>Description:</strong>
+    <%= @event.description %>
+  </p>
 
+  <h2 class="center">Comments</h2>
+  <% @event.reviews.each do |review| %>
+  <p>
+    <%= review.comment %>
+    <br>
+    Added: <%= time_ago_in_words(review.created_at) %> ago
+  </p>
+  <% end %>
+
+  <h3>New Comment</h3>
+  <%= render 'reviews/form' %>
+</div>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

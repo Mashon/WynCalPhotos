@@ -3,8 +3,13 @@
 <br><br>
 <div class="header">
   <p>WynCal</p>
+<<<<<<< HEAD
   <%#= link_to (image_tag "list_icon.png"), about_path %>
   <%= link_to (image_tag "info_icon.png"), about_path %>
+=======
+  <br><%#= link_to (image_tag "list_icon.png"), about_path %>
+  <%= link_to "<i class='fa fa-at'></i>".html_safe, about_path %>
+>>>>>>> a18d6524b14282c5b4edac50889bc4040812f03e
   <!-- <%= image_tag "search_function.png" %> -->
 </div><br><br>
 
@@ -28,8 +33,15 @@
     <div class="events">
       <%= event.name %>
       <!-- <%= event.description %> -->
+<<<<<<< HEAD
       <%= event.start_date %>
       <%= link_to 'Show', event %>
+=======
+      <%= event.start_date.strftime("%A, %b %d") %>
+      <%= link_to 'Show', event %></p>
+        <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
+        <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+>>>>>>> a18d6524b14282c5b4edac50889bc4040812f03e
     <% end %>
   </div>
 <br>
