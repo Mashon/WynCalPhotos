@@ -33,8 +33,10 @@
   </p>
   <% end %>
 
-  <h3>New Comment</h3>
-  <%= render 'reviews/form' %>
+  <div class="comment_input">
+    <h3>New Comment</h3>
+    <%= render 'reviews/form' %>
+  </div>
 </div>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
