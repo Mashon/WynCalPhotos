@@ -1,6 +1,8 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+  http_basic_authenticate_with name: "wyncal", password: "crud", except: [:index, :show]
+
   # GET /events
   # GET /events.json
   def index
