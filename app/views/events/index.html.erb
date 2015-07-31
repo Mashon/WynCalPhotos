@@ -19,15 +19,17 @@
       <%= link_to "<i class='fa fa-align-left'></i>".html_safe, event %></p>
     <% end %>
   </div>
-<br>
+<br><br><br>
 
-<% if ( (@page - 1) > 0 ) %>
-  <%= link_to "Previous page", page: @page - 1 %>
-<% end %>
+<div class="prevnext">
+  <% if ( (@page - 1) > 0 ) %>
+    <%= link_to "Previous", page: @page - 1 %>
+  <% end %>
 
-<% if @display_next %>
-  <%= link_to "Next page", page: @page + 1 %>
-<% end %>
+  <% if @display_next %>
+    <%= link_to "Next", page: @page + 1 %>
+  <% end %>
+</div>
 
 <br><br><br>
 

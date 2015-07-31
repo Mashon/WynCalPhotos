@@ -191,23 +191,60 @@
     text-decoration: none;
   }
 
-  /* this is to modify the "Create a New Event" link
-  at the bottom of the page.   */
 
-  .newevent {
-    font-family: 'Lato', sans-serif;
-    font-size: 2em;
-    text-align: center;
-  }
+  /* this modifies the appearance of the
+   previous/next page links  */
 
-  .newevent a:link {
+  .prevnext {
+     font-family: 'Lato', sans-serif;
+     font-size: 2.75em;
+     text-align: center;
+   }
+
+  .prevnext a:link {
     color: #CCFF40;
     font-weight: bold;
     text-decoration: none;
   }
 
-  .newevent a:visited {
+  .prevnext a:visited {
     color: #CCFF40;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .prevnext a:hover {
+    color: #E3F3B3;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: inherit;
+  }
+
+  .prevnext a:active {
+    color: #CCFF40;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+
+
+  /* this is to modify the "Create a New Event" link
+  at the bottom of the page.   */
+
+  .newevent {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  .newevent a:link {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .newevent a:visited {
+    color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
   }
@@ -220,7 +257,7 @@
   }
 
   .newevent a:active {
-    color: #CCFF40;
+    color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
   }
