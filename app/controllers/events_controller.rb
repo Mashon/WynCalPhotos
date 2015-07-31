@@ -1,6 +1,8 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
+  http_basic_authenticate_with name: "wyncal", password: "crud", except: [:index, :show]
+
   # GET /events
   # GET /events.json
   def index
@@ -10,10 +12,9 @@ class EventsController < ApplicationController
     offset = ( @page - 1 ) * 10
     total_count = Event.count
     @events = Event.
-      order(start_date: :desc).
+      order(start_date: :asc).
       limit(window).
-      offset(offset).
-      all
+      offset(offset)
     @display_next = offset + window < total_count
   end
 

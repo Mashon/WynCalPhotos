@@ -3,14 +3,19 @@
 <br><br>
 <div class="header">
   <p>WynCal</p>
-  <%= link_to (image_tag "list_icon.png"), events_path %>
-  <%= image_tag "search_function.png" %>
-  <%= image_tag "info_icon.png" %>
+  <br><%#= link_to (image_tag "list_icon.png"), about_path %>
+  <%= link_to (image_tag "info_icon.png"), about_path %>
+  <!-- <%= image_tag "search_function.png" %> -->
 </div><br><br>
+
 
 <br><br><br>
 <div class="upcoming">
 <center><h3>List of Upcoming Events</h3></center></div>
+=======
+<!-- <div class="thisweek">
+<center><h3>List of this Week's Events</h3></div></center>
+>>>>>>> d3571a1202df11792ddb0bd8c513e7408f2efca7
 
 <table>
   <thead>
@@ -22,8 +27,15 @@
       <th colspan="4"></th>
     </tr>
   </thead>
-</table>
+</table> -->
 
+<<<<<<< HEAD
+=======
+<!-- <br><br><br><br> -->
+<div class="upcoming">
+<center><h3>List of Upcoming Events</h3></div></center>
+
+>>>>>>> d3571a1202df11792ddb0bd8c513e7408f2efca7
 <!-- <table>
   <thead>
     <tr>
@@ -40,11 +52,11 @@
   <div class="events">
     <% @events.each do |event| %>
       <p><%= event.name %>
-      <%= event.description %>
+      <!-- <%= event.description %> -->
       <%= event.start_date %>
       <%= link_to 'Show', event %></p>
-          <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
-          <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
+        <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
     <% end %>
   </div>
 <br>

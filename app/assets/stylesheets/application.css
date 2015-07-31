@@ -22,7 +22,7 @@ body {
    background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
    background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
    background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.75)); /*Fx 3.6-15*/
-   /*background: linear-gradient(to left,rgba(43, 44, 44, 0.7), rgba(43, 44, 44, 1)); /*Standard*/*/
+   background: linear-gradient(to left,rgba(43, 44, 44, 0.7), rgba(43, 44, 44, 1)); /*Standard*/
  }
 
  body {
@@ -158,3 +158,24 @@ body {
     font-weight: bold;
     text-decoration: none;
   }
+
+.team {
+display: block;
+height: 20em;
+width: auto;
+border: solid black;
+}
+
+.portaits {
+height: 80%;
+width: 80%;
+border: solid black;
+}
+
+.us {
+  width: 30%;
+  height: 30%;
+  margin-top: .2em;
+  margin-left: .2em;
+  border-radius: 12.5em;
+}
