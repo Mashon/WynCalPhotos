@@ -16,7 +16,7 @@
     <% @events.each do |event| %>
       <p><%= event.start_date.strftime("%A, %b %d") %> |
       <%= event.name %> |
-      <%= link_to "<i class='fa fa-align-left'></i>".html_safe, events_path %></p>
+      <%= link_to "<i class='fa fa-align-left'></i>".html_safe, event %></p>
     <% end %>
   </div>
 <br>
