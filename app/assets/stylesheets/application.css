@@ -201,3 +201,8 @@ border: solid black;
 .center {
   text-align: center;
 }
+
+          /* Modify div for the comment submission at the bottom of the event show page */
+
+.comment_input {
+}
