@@ -70,7 +70,7 @@ body {
       width: 1em;
       opacity: 1;
       filter: alpha(opacity=0);
-      padding-right: 2em;
+      padding-left: 2.5em;
     }
 
     .header .fa-at:link {
@@ -101,7 +101,7 @@ body {
       width: 1em;
       opacity: 1;
       filter: alpha(opacity=0);
-      /*padding-right: 3em;*/
+      padding-right: 0.75em;
     }
 
     .header .fa-home:link {
