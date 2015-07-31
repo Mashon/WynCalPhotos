@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-
+<br><br>
 <div class="header">
   <p>WynCal</p>
   <%= link_to (image_tag "list_icon.png"), events_path %>
@@ -8,8 +8,9 @@
   <%= image_tag "info_icon.png" %>
 </div><br><br>
 
-<div class="thisweek">
-<center><h3>List of this Week's Events</h3></div></center>
+<br><br><br>
+<div class="upcoming">
+<center><h3>List of Upcoming Events</h3></center></div>
 
 <table>
   <thead>
@@ -22,10 +23,6 @@
     </tr>
   </thead>
 </table>
-
-<br><br><br><br>
-<div class="upcoming">
-<center><h3>List of Upcoming Events</h3></div></center>
 
 <!-- <table>
   <thead>
@@ -40,19 +37,17 @@
 </table> -->
 
 
-    <div class="events">
-      <% @events.each do |event| %>
-        <p><%= event.name %>
-        <%= event.description %>
-        <%= event.start_date %>
-        <%= link_to 'Show', event %></p>
+  <div class="events">
+    <% @events.each do |event| %>
+      <p><%= event.name %>
+      <%= event.description %>
+      <%= event.start_date %>
+      <%= link_to 'Show', event %></p>
           <!-- <td><%= link_to 'Edit', edit_event_path(event) %></td> -->
           <!-- <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      <% end %>
-    </div>
-
+    <% end %>
+  </div>
 <br>
-
 
 <% if ( (@page - 1) > 0 ) %>
   <%= link_to "Previous page", page: @page - 1 %>

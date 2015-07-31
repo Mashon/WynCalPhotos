@@ -19,6 +19,13 @@
   a tile.  */
 
 body {
+   background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
+   background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
+   background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.75)); /*Fx 3.6-15*/
+   /*background: linear-gradient(to left,rgba(43, 44, 44, 0.7), rgba(43, 44, 44, 1)); /*Standard*/*/
+ }
+
+ body {
    background-image: url('paper_bg.png');
    background-attachment: fixed;
    background-repeat: repeat;
@@ -44,7 +51,7 @@ body {
   height: 13.5em;
   width: 100%;
   padding-top: 1em;
-  padding-bottom: 1.85em;
+  padding-bottom: 1.95em;
   background: -webkit-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Safari 5.1-6*/
   background: -o-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Opera 11.1-12*/
   background: -moz-linear-gradient(left,rgba(69, 185, 158, 0.45), rgba(69, 164, 136, 0.65)); /*Fx 3.6-15*/
@@ -58,7 +65,6 @@ body {
 .header img {
   height: 9em;
   opacity: 1;
-  /*float: right;*/
   margin-top: 4em;
 }
 
@@ -81,17 +87,21 @@ body {
       text-decoration: none;
     }
 
-    /* modify "List of This Week's Events"   */
+    /* Modify the contents of the table
+    including the text and table modifications  */
 
-.thisweek {
-  color: black;
-  font-family: 'Oxygen', sans-serif;
-  font-size: 2.5em;
-  margin: auto;
-  /* background-color: rgba(69, 69, 72, 0.8); */
-  width: auto;
-  border-radius: 4.5em;
-}
+  table {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+    /*background-color: rgba(69, 69, 72, 0.8);
+    border: 3.5em;
+    width: 50em;*/
+    padding: 0.5em;
+    line-height: 5em;
+    word-spacing: 1.5em;
+  }
 
   /* modify the "List of Upcoming Events"   */
 
@@ -100,65 +110,51 @@ body {
   font-family: 'Oxygen', sans-serif;
   font-size: 2.5em;
   margin: auto;
-  /*background-color: rgba(69, 69, 72, 0.8);*/
-  width:auto;
-  border-radius: 4.5em;
+  border: 4.5em;
   }
 
   .events {
+    background-color: rgba(66,209,189, 0.45);
+    border-radius: 14.5em 20em;
+    padding: 2em;
+  }
+
+  .events p {
     color: black;
     font-family: 'Lato', sans-serif;
-    font-size: 1.95em;
-    line-height: 2em;
+    font-size: 1.75em;
+    line-height: 1.5em;
     text-align: center;
-    background-color: rgba(0, 0, 14, 0.3);
-    border-radius: 14em 20em;
-    padding: 2em
   }
 
 
-    /* Modify the contents of the table
-    including the text and table modifications  */
+  .newevent {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2em;
+  }
 
-/*table {
-  color: white;
-  font-family: 'Oxygen', sans-serif;
-  font-size: 1.5em;
-  margin: auto;
-  background-color: rgba(69, 69, 72, 0.8);
-  border: 3.5em;
-  width: 50em;
-  padding: 0.5em;
-  word-spacing: 1.5em;
-}*/
+  .newevent a:link {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
+  .newevent a:visited {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
+  .newevent a:hover {
+    background-color: inherit;
+    color: #5CB8E6;
+    font-weight: bold;
+    opacity: 1;
+    filter: alpha(opacity=0);
+  }
 
-.newevent {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2em;
-}
-
-.newevent a:link {
-  color: #333333;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.newevent a:visited {
-  color: #333333;
-  font-weight: bold;
-  text-decoration: none;
-}
-.newevent a:hover {
-  background-color: inherit;
-  color: #5CB8E6;
-  font-weight: bold;
-  opacity: 1;
-  filter: alpha(opacity=0);
-}
-.newevent a:active {
-  color: #333333;
-  font-weight: bold;
-  text-decoration: none;
-}
+  .newevent a:active {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+  }
