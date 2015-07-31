@@ -19,7 +19,7 @@
   a tile.  */
 
  body {
-   background-image: url('/images/abstract-background.jpg');
+   background-image: url("/images/abstract-background.jpg");
    background-attachment: fixed;
    background-size: cover;
  }
@@ -284,4 +284,5 @@
           /* Modify div for the comment submission at the bottom of the event show page */
 
 .comment_input {
+  text-align: center;
 }

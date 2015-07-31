@@ -21,15 +21,13 @@
   </div>
 <br><br><br>
 
-<div class="prevnext">
-  <% if ( (@page - 1) > 0 ) %>
-    <%= link_to "Previous", page: @page - 1 %>
-  <% end %>
+<% if ( (@page - 1) > 0 ) %>
+  <%= link_to "Previous page", page: @page - 1 %>
+<% end %>
 
-  <% if @display_next %>
-    <%= link_to "Next", page: @page + 1 %>
-  <% end %>
-</div>
+<% if @display_next %>
+  <%= link_to "Next page", page: @page + 1 %>
+<% end %>
 
 <br><br><br>
 
