@@ -1,9 +1,7 @@
-/*@import {url(http://fonts.googleapis.com/css?family=Raleway:400,700) }*/
-
-body  {
-  background-color: #CCC;
+  .header  {
   font-family: "Raleway";
   }
+
 
   figure {
     position: relative;
@@ -30,7 +28,7 @@ body  {
         text-align: center;
         font-size: 2em;
         color: rgba(34,145,112,1);
-        text-shadow: 2px 2px 1px white;
+        text-shadow: 2px 2px 1px black;
       }
 
       .fosho {
@@ -64,7 +62,7 @@ body  {
           bottom: 40%;
           color: rgba(0,0,0,1);
           background-color: rgba(255,255,255, .4);
-          font-size: 18gpx;
+          font-size: 18px;
           transition: all .3s;
           }
 
