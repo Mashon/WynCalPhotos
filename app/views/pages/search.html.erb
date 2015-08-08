@@ -1,1 +1,14 @@
 <h1>SEARCH</h1>
+
+<%= form_tag search_path do %>
+  <%= search_field_tag :term %>
+  <%= submit_tag "Search Events" %>
+<% end %>
+
+<% if @results.count > 0 %>
+  <ul>
+    <%= render partial: 'search_result', collection: @results %>
+  </ul>
+<% else %>
+  <p>We could not find any matching results.</p>
+<% end %>

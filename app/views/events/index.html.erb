@@ -5,6 +5,10 @@
   <p>WynCal</p>
   <br>
   <%= link_to "<i class='fa fa-at'></i>".html_safe, about_path %>
+  <%= form_tag search_path do %>
+    <%= search_field_tag :term %>
+    <%= submit_tag "Search Events" %>
+  <% end %>
 </div><br><br>
 
 
