@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :reviews
   resources :comments
   resources :events
-  resources :pages
 
   root 'events#index'
   get '/about', to: 'pages#about'
