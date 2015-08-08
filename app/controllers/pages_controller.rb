@@ -3,5 +3,6 @@ class PagesController < ApplicationController
   end
 
   def search
+    @results = Event.search(params[:term])
   end
 end
