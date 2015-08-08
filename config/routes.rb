@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'pages/about'
 
   resources :reviews
-  resources :comments
   resources :events
 
   root 'events#index'
