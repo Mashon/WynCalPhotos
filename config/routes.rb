@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   root 'events#index'
   get '/about', to: 'pages#about'
+
+  get '/search', to: 'pages#search'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
